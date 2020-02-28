@@ -31,8 +31,8 @@ second_to_fourth_element = row_1[1:4]
 #Opening a data set file and using it to create a list lists:
 
 opened_file = open('AppleStore.csv')
-from csv import reader
-read_file = reader(opened_file)
+from csv import reader #reader is a function that generates a reader object
+read_file = reader(opened_file) 
 apps_data = list(read_file)
 
 #Repeating a process using a for loop:
